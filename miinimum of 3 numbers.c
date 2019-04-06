@@ -8,11 +8,11 @@ int compute(int a,int b ,int c)
 {
     int min;
     min=a;
-    if(min>b)
-    min =b;
-    if(min>c)
-    min=c;
-    return c;
+    if(b<min)
+        min =b;
+    if(c<min)
+        min=c;
+    return min;
 }
 void output(int a,int b,int c,int min)
 {
